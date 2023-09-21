@@ -7,5 +7,3 @@ CREATE TABLE "posts" (
 
 ALTER TABLE posts ADD "createdAt" DATE;
 ALTER TABLE posts RENAME COLUMN "body" TO "content";
-ALTER TABLE posts ALTER COLUMN "createdAt" SET DEFAULT CURRENT_DATE;
-ALTER TABLE posts ALTER COLUMN "createdAt" SET NOT NULL;

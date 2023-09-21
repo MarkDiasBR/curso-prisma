@@ -8,9 +8,9 @@ datasource db {
 }
 
 model posts {
-  id        Int      @id @default(autoincrement())
+  id        Int       @id @default(autoincrement())
   username  String
   title     String
   content   String
-  createdAt DateTime @default(dbgenerated("CURRENT_DATE")) @db.Date
+  createdAt DateTime? @db.Date
 }
